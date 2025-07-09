@@ -33,12 +33,13 @@ export default function MobileFab() {
           className="w-12 h-12 rounded-full bg-indigo-500 text-white flex items-center justify-center shadow-lg hover:bg-indigo-600 transition"
         >
           <motion.span
-            className="text-2xl"
-            animate={{ rotate: isOpen ? 45 : 0 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-          >
-            +
-          </motion.span>
+  className="text-sm font-semibold"
+  animate={{ scale: isOpen ? 1.1 : 1 }}
+  transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+>
+  Links
+</motion.span>
+
         </motion.button>
 
         {/* Icons on tap */}
