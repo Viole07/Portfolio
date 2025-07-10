@@ -18,13 +18,13 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="min-h-screen text-white px-6 py-20">
+    <section className="text-white px-6 py-20">
       <motion.h2
         className="text-4xl font-bold text-indigo-400 mb-12 text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.6 }}
       >
         My Skills
       </motion.h2>
@@ -52,7 +52,7 @@ export default function Skills() {
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ delay: index * 0.05 }}
-  viewport={{ once: true }}
+  viewport={{ once: false, amount: 0.6 }}
 >
   <div className="text-4xl mb-1" style={{ color: skill.color }}>
     {skill.icon}

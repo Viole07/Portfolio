@@ -45,11 +45,12 @@ export default function Hero() {
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-6">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/16kC7T8AXYDcWrb-OVUUncG6u5iKYCrRW/view?usp=sharing"
+              target = '_blank'
               download
               className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded transition"
             >
-              Download Resume
+              View Resume
             </a>
             <a
               href="#contact"
@@ -72,7 +73,13 @@ export default function Hero() {
 
         {/* Right: Lottie */}
         <div className="md:w-[40%] w-64 sm:w-72 md:w-80">
-          <Lottie animationData={animationData} loop={true} />
+          <motion.div
+  initial={{ y: 0 }}
+  whileInView={{ y: [-10, 10, -10] }}
+  transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
+>
+  <Lottie animationData={animationData} loop={true} />
+</motion.div>
         </div>
       </div>
     </section>

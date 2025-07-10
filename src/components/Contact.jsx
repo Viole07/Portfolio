@@ -9,7 +9,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.6 }}
       >
         Contact Me
       </motion.h2>
@@ -19,7 +19,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.6 }}
         onSubmit={(e) => {
           e.preventDefault();
           alert("Form submitted! (This is just a demo)");

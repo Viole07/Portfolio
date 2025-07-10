@@ -28,7 +28,7 @@ export default function AnimatedBackground() {
             type: ['circle', 'edge'],
           },
           opacity: {
-            value: 0.4,
+            value: 0.5,
             random: true,
             animation: {
               enable: true,
@@ -54,16 +54,13 @@ export default function AnimatedBackground() {
             width: 1,
           },
           move: {
-            enable: true,
-            speed: 0.25,
-            direction: 'none',
-            outModes: { default: 'out' },
-            parallax: {
-              enable: true,
-              force: 25,
-              smooth: 15,
-            },
-          },
+  enable: true,
+  speed: 0.4,
+  direction: 'none',
+  random: true,
+  straight: false,
+  outModes: { default: 'out' },
+}
         },
         interactivity: {
           events: {
@@ -75,7 +72,7 @@ export default function AnimatedBackground() {
             grab: {
               distance: 120,
               links: {
-                opacity: 0.2,
+                opacity: 0.3,
               },
             },
             push: {
@@ -84,6 +81,10 @@ export default function AnimatedBackground() {
           },
         },
         detectRetina: true,
+        style: {
+  filter: 'blur(1px)',
+}
+
       }}
     />
   );

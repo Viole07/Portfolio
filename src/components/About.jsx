@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center  text-white px-6 py-20">
+    <section className="flex flex-col justify-center items-center  text-white px-6 py-20">
       <motion.h2
         className="text-4xl md:text-5xl font-bold mb-10 text-indigo-400"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.6 }}
       >
         About Me
       </motion.h2>
@@ -19,7 +19,7 @@ export default function About() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.6 }}
       >
         <p className="mb-6">
           I'm a front-end developer passionate about crafting immersive user interfaces.

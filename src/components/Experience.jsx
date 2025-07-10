@@ -25,13 +25,13 @@ export default function Experience() {
   ];
 
   return (
-    <section className="min-h-screen text-white px-6 py-20">
+    <section className=" text-white px-6 py-20">
       <motion.h2
         className="text-4xl font-bold text-indigo-400 mb-12 text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.6 }}
       >
         Experience
       </motion.h2>
@@ -44,8 +44,8 @@ export default function Experience() {
                        hover:shadow-[0_0_12px_2px_#6366f1] transition-all duration-300 transform hover:scale-[1.015]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1, duration: 0.5 }}
-            viewport={{ once: true }}
+            transition={{ delay: index * 0.3, duration: 0.8 }}
+            viewport={{ once: false, amount: 0.6  }}
           >
             <h3 className="text-xl md:text-2xl font-semibold text-indigo-300 mb-1">{exp.title}</h3>
             <p className="text-sm text-indigo-400 mb-3">{exp.company} • {exp.period}</p>
