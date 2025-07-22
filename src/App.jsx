@@ -10,10 +10,12 @@ import Experience from './components/Experience';
 // import SideRail from './components/SideRail';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'; // optional if you use it
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
+      <Toaster position="top-center" reverseOrder={false} />
       {/* <SideRail /> */}
       <Navbar />
       <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#101421] animate-gradient z-[-10]" />

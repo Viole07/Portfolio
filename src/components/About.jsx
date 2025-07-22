@@ -22,12 +22,18 @@ export default function About() {
         viewport={{ once: false, amount: 0.6 }}
       >
         <p className="mb-6">
-          I'm a front-end developer passionate about crafting immersive user interfaces.
-          With a love for animation and interaction, I turn designs into smooth, dynamic experiences.
+          I'm a final-year Computer Engineering student passionate about building modern web applications using the MERN stack (MongoDB, Express, React, Node.js). I enjoy transforming ideas into functional, clean user interfaces, and I'm continuously sharpening my skills through real-world projects and problem-solving on platforms like LeetCode using Python.
+
+I have hands-on experience with HTML, CSS, JavaScript, and utility-first frameworks like Tailwind CSS and Bootstrap. I’m also comfortable with version control tools like Git & GitHub, API testing using Postman, and have a solid grasp of SQL fundamentals.
+
+Currently, I’m seeking opportunities where I can contribute meaningfully, grow as a developer, and collaborate with teams working on impactful software. If you're hiring or working on something exciting, I’d love to connect!
         </p>
-        <p>
-          I'm skilled in React, Tailwind CSS, Framer Motion, and modern web technologies — always exploring what's next.
-        </p>
+        <a
+  href="#contact"
+  className="mt-4 inline-block text-indigo-400 hover:text-white underline text-sm"
+>
+  Let’s work together →
+</a>
       </motion.div>
     </section>
   );
