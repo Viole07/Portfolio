@@ -3,25 +3,37 @@ import { motion } from 'framer-motion';
 
 export default function Experience() {
   const experienceData = [
-    {
-      title: 'Frontend Developer Intern',
-      company: 'XYZ Company',
-      period: 'Jan 2024 - Apr 2024',
-      points: [
-        'Developed responsive React components using Tailwind CSS.',
-        'Integrated REST APIs and improved load performance.',
-        'Collaborated with the UI/UX team to polish the interface.',
-      ],
-    },
-    {
-      title: 'Freelance Web Designer',
-      company: 'Self-employed',
-      period: '2023 - Present',
-      points: [
-        'Designed and delivered custom portfolios and landing pages.',
-        'Used Figma and Webflow for mockups and hand-off.',
-      ],
-    },
+  {
+    title: 'Full Stack Web Development Intern',
+    company: 'EY-GDS & AICTE Virtual Internship',
+    period: 'Jan 2025 – Mar 2025',
+    points: [
+      'Developed a full-stack recipe sharing app using the MERN stack.',
+      'Implemented JWT-based auth, image uploads, and advanced filters.',
+    ],
+    link: 'https://drive.google.com/file/d/10PYhgP_RYneH-vop3Gvnery5pYUJ41qL/view?usp=sharing',
+  },     
+  {
+    title: 'Blockchain Developer Intern',
+    company: 'VOIS & AICTE Virtual Internship',
+    period: 'Jan 2025 – Feb 2025',
+    points: [
+      'Built a decentralized land registry system using Solidity on Ethereum.',
+      'Implemented ownership verification and event-based traceability.',
+      'Gained hands-on experience with Remix IDE and smart contracts.',
+    ],
+    link : 'https://drive.google.com/file/d/1NrFlUCZdys_rv1KqbBKRiXbaIfkME9sZ/view?usp=sharing',
+  },
+  {
+    title: 'Open Source Contributor',
+    company: 'Hacktoberfest 2024',
+    period: 'Oct 2024',
+    points: [
+      'Successfully completed Hacktoberfest 2024 and earned all 5 badges.',
+      'Contributed to various GitHub repositories across web and open-source tools.',
+    ],
+    link: 'https://www.holopin.io/@viole07#badges',
+  },
   ];
 
   return (
@@ -54,6 +66,16 @@ export default function Experience() {
                 <li key={i}>{point}</li>
               ))}
             </ul>
+            {exp.link && (
+  <a
+    href={exp.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-4 text-indigo-400 hover:text-indigo-200 underline text-sm"
+  >
+    View
+  </a>
+)}
           </motion.div>
         ))}
       </div>
