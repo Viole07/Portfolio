@@ -22,7 +22,7 @@ export default function Experience() {
       'Implemented ownership verification and event-based traceability.',
       'Gained hands-on experience with Remix IDE and smart contracts.',
     ],
-    link : 'https://drive.google.com/file/d/1NrFlUCZdys_rv1KqbBKRiXbaIfkME9sZ/view?usp=sharing',
+    link : 'https://drive.google.com/file/d/13lIe1Zh77QyCTgOQzaZu-S7S805MSOo8/view?usp=sharing',
   },
   {
     title: 'Open Source Contributor',
